@@ -1,7 +1,7 @@
 // Seleciona o elemento HTML com a classe "display", que representa a tela da calculadora.
 const display = document.querySelector(".display");
 
-// Seleciona todos os elementos HTML do tipo botão.
+// Seleciona todos os elementos HTML do tipo "button".
 const buttons = document.querySelectorAll("button");
 
 // Array que contém os caracteres especiais da calculadora.
@@ -12,7 +12,7 @@ let output = "";
 
 // Define a função que será chamada quando um botão for pressionado.
 const calculate = (btnValue) => {
-    // Verifica se o botão pressionado é o de igualdade "=" e se há uma expressão para calcular.
+    // Verifica se o botão pressionado é o de igual(equal) "=" e se há uma expressão para calcular.
     if (btnValue === "=" && output !== "") {
         // Se a expressão contém o caractere '%', calcula a porcentagem manualmente.
         if (output.includes("%")) {
